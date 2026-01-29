@@ -1,0 +1,13 @@
+.user-info-container > *:not(:last-child){
+    margin: 0 0 15px 0;
+}
+
+.user-info-container-item{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user-info-container-item > span{
+    font-size: 18px;
+    font-weight: 500;
+}

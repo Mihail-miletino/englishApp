@@ -1,0 +1,8 @@
+frontend/node_modules
+frontend/in.txt
+frontend/out.txt
+backend/node_modules
+backend/config
+backend/in.txt
+backend/out.txt
+backend/logs.txt
