@@ -1,3 +1,5 @@
+import https from "node:https";
+import fs from "node:fs";
 import express from "express";
 import mongoose from "mongoose";
 import config from "config";
@@ -12,13 +14,16 @@ const HOST = config.get("HOST");
 const PORT = config.get("PORT");
 const mongoURI = config.get("mongoURI");
 
+const httpsOptions = {
+    key: fs.readFileSync("/Users/michail/localhost+2-key.pem", "utf-8"),
+    cert: fs.readFileSync("/Users/michail/localhost+2.pem", "utf-8")
+};
+
 app.use("/api/records", verifyTokenMiddleware, express.json(), RecordsRouter);
 
 app.use("/api/auth", express.json(), AuthRouter);
 
-app.use("/api/create", verifyTokenMiddleware, express.json(), (req, res, next) => {
-    next();
-}, CreateRouter);
+app.use("/api/create", verifyTokenMiddleware, express.json(), CreateRouter);
 
 app.use("/", (req, res) => {
     return res.end("Hello from Backend");
@@ -28,8 +33,9 @@ async function start(){
     try{
         await mongoose.connect(mongoURI);
         console.log("Соединение с базой данных успешно установлено");
-        app.listen(PORT, HOST, () => {
-            console.log(`Сервер работает на адресе: http://${HOST}:${PORT}`);
+        const server = https.createServer(httpsOptions, app);
+        server.listen(PORT, HOST, () => {
+            console.log(`Сервер работает на адресе: https://${HOST}:${PORT}`);
         });
     } catch (err){
         console.log(`Ошибка: ${err.message}`);

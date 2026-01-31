@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import fs from "node:fs";
 import react from '@vitejs/plugin-react';
 import path from "node:path"
 
@@ -17,11 +18,15 @@ export default defineConfig({
     }
   },
   server: {
+    https: {
+      key: fs.readFileSync("/Users/michail/localhost+2-key.pem", "utf-8"),
+      cert: fs.readFileSync("/Users/michail/localhost+2.pem", "utf-8")
+    },
     proxy: {
       "/api": {
-        target: "http://localhost:4000",
+        target: "https://localhost:4000",
         changeOrigin: true,
-        secure: true
+        secure: false
       }
     }
   }
