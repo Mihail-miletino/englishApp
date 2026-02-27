@@ -38,3 +38,28 @@
 .modal-buttons-container > *:not(:last-child){
     margin: 0 15px 0 0;
 }
+
+.quizzes-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quizzes-list > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    flex: 1 1 auto;
+}
+
+.quizzes-list > *:not(:last-child){
+    margin: 0 15px 0 0;
+}
+
+.modal-window{
+    padding: 10px 10px 10px 10px !important;
+}

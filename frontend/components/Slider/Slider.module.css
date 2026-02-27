@@ -1,0 +1,31 @@
+.slider-container{
+    width: 80% !important;
+    position: relative;
+    left: calc(50% - 40%);
+}
+
+.slider-button-next{
+    position: absolute;
+    top: calc(50% - 40px);
+    right: 15px;
+    z-index: 100;
+}
+
+.slider-button{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    -webkit-user-select: none;
+}
+
+.slider-button-prev{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 15px;
+    z-index: 100;
+}

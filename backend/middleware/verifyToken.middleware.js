@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import config from "config";
 
 export function verifyTokenMiddleware(req, res, next){
+    console.log(req);
     const userData = JSON.parse(req.headers.authorization);
     const {token} = userData;
     const SECRET_KEY = config.get("secretKey");

@@ -26,6 +26,9 @@ export function Header(){
                             <Link to={"/create"}>Create</Link>
                         </li>
                         <li>
+                            <Link to={"/quizzes"}>Quizzes</Link>
+                        </li>
+                        <li>
                             <Link to={"/login"}>Login</Link>
                         </li>
                         <li>

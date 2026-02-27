@@ -6,6 +6,7 @@ import config from "config";
 import {AuthRouter} from "./routes/auth.routes.js";
 import {CreateRouter} from "./routes/create.routes.js";
 import {RecordsRouter} from "./routes/records.routes.js";
+import {QuizRouter} from "./routes/quiz.routes.js";
 import {verifyTokenMiddleware} from "./middleware/verifyToken.middleware.js";
 
 const app = express();
@@ -24,6 +25,8 @@ app.use("/api/records", verifyTokenMiddleware, express.json(), RecordsRouter);
 app.use("/api/auth", express.json(), AuthRouter);
 
 app.use("/api/create", verifyTokenMiddleware, express.json(), CreateRouter);
+
+app.use("/api/quiz", verifyTokenMiddleware, express.json(), QuizRouter);
 
 app.use("/", (req, res) => {
     return res.end("Hello from Backend");

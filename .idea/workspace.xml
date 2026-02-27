@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d21280e-49c6-403c-a306-4deef05faa46" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/middleware/verifyToken.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middleware/verifyToken.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/User.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/create.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/create.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ModalRecords/ModalRecords.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ModalRecords/ModalRecords.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/RecordsPage/RecordsPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/RecordsPage/RecordsPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/UserOffice/UserOffice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/UserOffice/UserOffice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/UserOffice/UserOffice.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/UserOffice/UserOffice.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/routes.hook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/routes.hook.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/frontend/node_modules/materialize-css/js/slider.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="36p6S8x93rCm7ZDnFXSDok8tCCb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.15.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.15.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d21280e-49c6-403c-a306-4deef05faa46" name="Changes" comment="" />
+      <created>1765691164839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765691164839</updated>
+      <workItem from="1765691166732" duration="14824000" />
+      <workItem from="1765784890274" duration="5017000" />
+      <workItem from="1766158892670" duration="12392000" />
+      <workItem from="1766235222355" duration="7790000" />
+      <workItem from="1766295684955" duration="19875000" />
+      <workItem from="1766331582405" duration="1801000" />
+      <workItem from="1766745839922" duration="3738000" />
+      <workItem from="1766762779086" duration="9413000" />
+      <workItem from="1766840822445" duration="21485000" />
+      <workItem from="1766899813678" duration="12150000" />
+      <workItem from="1766925380149" duration="639000" />
+      <workItem from="1767008087370" duration="6353000" />
+      <workItem from="1767071352562" duration="5807000" />
+      <workItem from="1767083878358" duration="11802000" />
+      <workItem from="1767505433145" duration="6033000" />
+      <workItem from="1767590781388" duration="16035000" />
+      <workItem from="1767678051654" duration="15891000" />
+      <workItem from="1767850163951" duration="13760000" />
+      <workItem from="1767969597712" duration="8057000" />
+      <workItem from="1768139107204" duration="9945000" />
+      <workItem from="1768281918477" duration="20694000" />
+      <workItem from="1768742118962" duration="8695000" />
+      <workItem from="1768886977536" duration="7950000" />
+      <workItem from="1768900115011" duration="9487000" />
+      <workItem from="1768926970484" duration="8429000" />
+      <workItem from="1768981274455" duration="11000" />
+      <workItem from="1769018355593" duration="4845000" />
+      <workItem from="1769067721397" duration="6000" />
+      <workItem from="1769162456973" duration="2750000" />
+      <workItem from="1769338656051" duration="14581000" />
+      <workItem from="1769403359225" duration="12698000" />
+      <workItem from="1769438110020" duration="11000" />
+      <workItem from="1769490644523" duration="16468000" />
+      <workItem from="1769528283899" duration="3000" />
+      <workItem from="1769665038211" duration="14474000" />
+      <workItem from="1769699470029" duration="85000" />
+      <workItem from="1769777637940" duration="514000" />
+      <workItem from="1769796956430" duration="2375000" />
+      <workItem from="1769869607449" duration="16379000" />
+      <workItem from="1769924116354" duration="13869000" />
+      <workItem from="1770025474149" duration="4000" />
+      <workItem from="1770112735625" duration="224000" />
+      <workItem from="1770963460107" duration="2851000" />
+      <workItem from="1770969143232" duration="12000" />
+      <workItem from="1770969939855" duration="5498000" />
+      <workItem from="1770983855978" duration="5504000" />
+      <workItem from="1771005632911" duration="5319000" />
+      <workItem from="1771082428523" duration="12431000" />
+      <workItem from="1771148359624" duration="9034000" />
+      <workItem from="1771168781767" duration="18000" />
+      <workItem from="1771168818904" duration="5000" />
+      <workItem from="1771217007826" duration="4377000" />
+      <workItem from="1771232008482" duration="9196000" />
+      <workItem from="1771243912024" duration="7134000" />
+      <workItem from="1771313426430" duration="10770000" />
+      <workItem from="1771328761350" duration="3757000" />
+      <workItem from="1771343788620" duration="5719000" />
+      <workItem from="1771517223141" duration="9099000" />
+      <workItem from="1771567254005" duration="56000" />
+      <workItem from="1771601798609" duration="8595000" />
+      <workItem from="1771655300202" duration="4559000" />
+      <workItem from="1771692705378" duration="8547000" />
+      <workItem from="1771737493010" duration="16268000" />
+      <workItem from="1771866271676" duration="7977000" />
+      <workItem from="1771911246084" duration="5613000" />
+      <workItem from="1772016587981" duration="5695000" />
+      <workItem from="1772039719201" duration="17588000" />
+      <workItem from="1772176001379" duration="3964000" />
+      <workItem from="1772182984316" duration="1678000" />
+      <workItem from="1772195157695" duration="365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -3,6 +3,8 @@ import {check, validationResult} from "express-validator";
 import {User} from "../models/User.model.js";
 import {Word} from "../models/Word.model.js";
 import {Record} from "../models/Record.model.js";
+import {Quiz} from "../models/Quiz.model.js";
+import mongoose from "mongoose";
 
 export const CreateRouter = Router();
 
@@ -77,6 +79,56 @@ CreateRouter.post("/record",
 
         return res.status(200).json({
             message: "Word is created"
+        });
+    }
+);
+
+CreateRouter.post("/quiz", [
+    check("name")
+        .matches(/^(?!\s+$)(?!\d+$).+/)
+        .withMessage("Quiz name can not contain only spaces or only digits")
+    ],
+    async (req, res) => {
+        const errors = validationResult(req).array();
+        if (errors.length > 0){
+            return res.status(400).json({
+                errors: errors
+            });
+        }
+        const {userId} = JSON.parse(req.headers.authorization);
+        const {name, selectedWords} = req.body;
+
+        const objUserId = new mongoose.Types.ObjectId(userId);
+
+        const isQuiz = await Quiz.findOne({name: name, author: objUserId});
+
+        if (isQuiz){
+            return res.status(409).json({
+                message: "You already have quiz with such a name"
+            });
+        }
+
+        const quiz = new Quiz({
+            name: name.toLowerCase(),
+            words: selectedWords,
+            author: userId
+        });
+
+        try{
+            await quiz.save();
+        } catch(err){
+            return res.status(400).json({
+                message: JSON.stringify(err)
+            });
+        }
+
+        const user = await User.findOne({_id: userId});
+
+        user.quizzes.push(quiz);
+        await user.save();
+
+        return res.status(200).json({
+            message: "Quiz is created"
         });
     }
 );

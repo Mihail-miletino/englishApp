@@ -1,0 +1,27 @@
+.words-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.words-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    gap: 15px 25px;
+}
+
+.words-list > *{
+    flex: 1 1 auto;
+}
+
+.words-list-item{
+    background: blueviolet;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

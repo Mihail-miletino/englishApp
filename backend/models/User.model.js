@@ -1,4 +1,4 @@
-import {Schema, model, SchemaTypes} from "mongoose";
+import {Schema, model} from "mongoose";
 
 const userSchema = new Schema({
     username: {
@@ -18,8 +18,16 @@ const userSchema = new Schema({
     records: {
         type: [
             {
-                type: SchemaTypes.ObjectId,
+                type: Schema.Types.ObjectId,
                 ref: "Record"
+            }
+        ]
+    },
+    quizzes: {
+        type: [
+            {
+               type: Schema.Types.ObjectId,
+               ref: "Quiz"
             }
         ]
     }

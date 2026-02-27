@@ -1,4 +1,5 @@
 import {Router} from "express";
+import fs from "node:fs";
 import {check, validationResult} from "express-validator";
 import {User} from "../models/User.model.js";
 import {hash, compare} from "bcryptjs";
@@ -96,11 +97,12 @@ AuthRouter.post("/login",
 
 AuthRouter.get("/office", async (req, res) => {
     const {userId} = JSON.parse(req.headers.authorization);
-    const user = await User.findOne({_id: userId});
+    const user = await User.findOne({_id: userId}).populate("records");
     const userInfo = {
         username: user.username,
         email: user.email,
-        records: user.records.length
+        recordsNumber: user.records.length,
+        records: user.records
     };
     return res.status(200).json({
         message: "UserInfo",

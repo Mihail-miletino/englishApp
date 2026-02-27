@@ -1,0 +1,36 @@
+.res-line{
+    width: 80%;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.res-line-colored{
+    height: 100%;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+
+.table-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.result-table{
+    display: flex;
+    align-items: center;
+}
+
+.result-table > ul > li{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
